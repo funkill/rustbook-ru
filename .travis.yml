@@ -3,10 +3,7 @@ language: node_js
 node_js:
  - node
 cache: npm
-branches:
-  only:
-  - master
 before_script:
   - npm install yaspeller -g
 script:
-  - git log --name-only -n1 --oneline | grep "^rustbook-en/.*/*.md" --color=never | xargs yaspeller -c common-configs/.yaspellerrc
+  - git log --name-only -n1 --oneline | grep "^rustbook-ru/.*/*.md" --color=never | xargs yaspeller -c common-configs/.yaspellerrc
