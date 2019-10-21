@@ -9,4 +9,4 @@ branches:
 before_script:
   - npm install yaspeller -g
 script:
-  - if [[ $TRAVIS_PULL_REQUEST != "false" ]]; then git diff --name-only $TRAVIS_PULL_REQUEST_BRANCH...master --oneline; fi #| grep "^rustbook-ru" | grep "*.md$" --color=never #| xargs yaspeller -c common-configs/.yaspellerrc
+  - if [[ $TRAVIS_PULL_REQUEST != "false" ]]; then git diff --name-only HEAD...$TRAVIS_BRANCH --oneline; fi #| grep "^rustbook-ru" | grep "*.md$" --color=never #| xargs yaspeller -c common-configs/.yaspellerrc
