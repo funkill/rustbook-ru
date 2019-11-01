@@ -11,5 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
-    - name: diff
-      run: git show -m --name-only -1 --format="format:"
+      with:
+        submodules: recursive
+    - run: npm install -f yaspeller
+    - run: git show -m --name-only -1 --format="format:" | grep --color=never '*.md' | xargs yaspeller -c common-configs/.yaspellerrc
