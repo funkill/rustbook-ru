@@ -12,4 +12,4 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: diff
-      runs: git diff master..$GITHUB_SHA
+      run: git diff master..$GITHUB_SHA
