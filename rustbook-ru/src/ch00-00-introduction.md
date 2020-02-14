@@ -74,7 +74,7 @@ Rust для людей, которые жаждут скорости и стаб
 
 Ferris | Пояснения
 --- | ---
-<img class="ferris-explain" src="/img/ferris/does_not_compile.svg"> | Этот код не  компилируется!
+<img class="ferris-explain" src="/img/ferris/does_not_compile.svg"> | Этот код не компилируется!
 <img class="ferris-explain" src="/img/ferris/panics.svg"> | Этот код вызывает состояние "panic"!
 <img class="ferris-explain" src="/img/ferris/unsafe.svg"> | Этот блок содержит небезопасный код.
 <img class="ferris-explain" src="/img/ferris/not_desired_behavior.svg"> | Этот код ведёт себя не так, как предполагается.
